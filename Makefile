@@ -1,8 +1,9 @@
 CFLAGS=-Wall -g
 
-all: clean
-	cc ex1.c -o ex1
-	cc ex3.c -o ex3
+all: clean ex1 ex3
+
+ex1: ex1
+ex3: ex3
 
 clean:
 	rm -f ex1
