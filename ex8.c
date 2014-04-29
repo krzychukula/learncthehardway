@@ -2,13 +2,18 @@
 
 int main(int argc, char const *argv[])
 {
-	int areas[] = {10, 12, 13, 14, 20};
-	char name[] = "Zed";
 	char full_name[] = {
 		'Z', 'e', 'd',
 		' ', 'A', '.', ' ',
-		'S', 'h', 'a', 'w', '\0'
+		'S', 'h', 'a', 'w'//	, '\0'
 	};
+	int areas[] = {10, 12, 13, 14, 20};
+	char name[] = "Zed";
+
+	areas[0] = 100;
+	name[0] = 100;
+	full_name[0] = 100;
+
 
 	//Warning: On some systems you may have to change
 	//the %ld in this code to a %u since it will
@@ -16,7 +21,7 @@ int main(int argc, char const *argv[])
 	printf("The size of an int: %ld\n", sizeof(int));
 	printf("The size of areas (int[]): %ld\n", sizeof(areas));
 	printf("The number of ints in areas: %ld\n", sizeof(areas) / sizeof(int));
-	printf("The first area is %d, the 2nd %d.\n", areas[0], areas[1]);
+	printf("The first area is %d, the 2nd %d.\n", areas[0], areas[10]);
 
 	printf("The size of a char: %ld\n", sizeof(char));
 	printf("The size of name (char[]): %ld\n", sizeof(name));
