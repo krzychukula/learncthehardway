@@ -22,5 +22,19 @@ int main(int argc, char const *argv[])
 		printf("state %d: %s\n", i, states[i]);
 	}
 
+	i = 0;
+	while(i < num_states && i < argc){
+		//states[i] = argv[i];
+		//warning: assignment discards ‘const’ qualifier
+		// from pointer target type [enabled by default]
+		i++;
+	}
+
+	i = num_states; //watch for this
+	while(i > 0){
+		i--;
+		printf("state %d: %s\n", i, states[i]);
+	}
+
 	return 0;
 }
