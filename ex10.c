@@ -5,10 +5,9 @@ int main(int argc, char const *argv[])
 		//let's make our own array of strings
 	char *states[] = {
 		"California", "Oregon",
-		"Washington", NULL,
-		"Texas"
+		"Washington", "Texas"
 	};
-	states[0] = argv[0];
+	//states[0] = argv[0];
 	argv[0] = states[1];
 
 	int i = 0;
