@@ -4,9 +4,9 @@ int main(int argc, char const *argv[])
 {
 	int i = 0;
 
-	if (argc == 1) {
+	if (argc == 2) {
 		printf("You only have one argument. You suck.\n");
-	} else if(argc > 1 && argc < 4) {
+	} else if(argc > 2 && argc < 4) {
 		printf("Here's your arguments:\n");
 
 		for(i = 0; i < argc; i++){
