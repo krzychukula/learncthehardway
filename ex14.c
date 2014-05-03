@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 //forward declarations
 int can_print_it(char ch);
-void print_letters(const char arg[]);
+void print_letters(int len, const char arg[]);
 
 void print_arguments(int argc, const char *argv[])
 {
@@ -11,15 +12,15 @@ void print_arguments(int argc, const char *argv[])
 
 	for (i = 0; i < argc; ++i)
 	{
-		print_letters(argv[i]);
+		print_letters(strlen(argv[i]), argv[i]);
 	}
 }
 
-void print_letters(const char arg[])
+void print_letters(int len, const char arg[])
 {
 	int i = 0;
 
-	for (i = 0; arg[i] != '\0'; ++i) {
+	for (i = 0; i < len; ++i) {
 		char ch = arg[i];
 
 		if(can_print_it(ch)){
