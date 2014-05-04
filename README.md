@@ -34,3 +34,6 @@ The Pointer Lexicon
 
 `ptr++`
 	"increment where ptr points"
+
+good explanation of pointers in context: http://stackoverflow.com/questions/17226278/pointers-and-arrays-learn-c-the-hard-way
+
