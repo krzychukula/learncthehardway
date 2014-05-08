@@ -1,4 +1,4 @@
-#ifdef _object_h
+#ifndef _object_h
 #define _object_h
 
 typedef enum {
